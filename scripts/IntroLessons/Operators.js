@@ -13,16 +13,48 @@ function sinmpleOperators (numberA, numberB){
   console.log(numberA, numberB, 'modulus',modulus);
 }
 
-skin count by 4 for 10 times starting at 69
-function skipCointing (interval) {
+//skin count by  for  times starting at
+function skipCointing (interval, times, startingNumber) {
+  for (let i = 1; i <= times; i++) {
+      startingNumber = startingNumber + interval
+      console.log(startingNumber);
+  }
+}
+
+function howManyTimes (numberStart, numberEnd, skipCount) {
+  while (numberStart < numberEnd) {
+    numberStart += skipCount;
+    console.log(numberStart);
+
+  }
 
 }
 
-let number = [56, 101, 232, 1, 12, 23, 45, 645, '1'];
+function looseEquality (firstOperand, secondOperand) {
+  console.log(firstOperand == secondOperand);
+}
+
+function strictEquality (firstOperand, secondOperand) {
+  console.log(firstOperand === secondOperand);
+}
+
+function customerType (points) {
+  return type = points >= 100 ? 'gold' : 'silver'
+}
+
+let number = [4, 7, 13, 99, 0, 100, 5, 1, '1'];
 
 
 
 
-sinmpleOperators(number[0], number[5]);
-sinmpleOperators(number[2], number[3]);
-sinmpleOperators(number[3], number[7]);
+//sinmpleOperators(number[0], number[5]);
+//sinmpleOperators(number[2], number[3]);
+//sinmpleOperators(number[3], number[7]);
+
+//interval, times, startingNumber
+//skipCointing (number[0], number[6], number[1]);
+//skipCointing (number[5], number[3], number[2]);
+//howManyTimes (number[0], number[5], number[1]);
+//looseEquality (number[7], number[8]);
+//strictEquality (number[7], number[8]);
+console.log(customerType (number[5]));
